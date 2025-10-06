@@ -6,6 +6,7 @@ import type { ContactFormBlock } from "@/components/blocks/forms/contact-form";
 import type { FormContactMapBlock } from "@/components/blocks/forms/contact-map";
 import type { LocationMapBlock } from "@/components/blocks/location/location-map";
 import type { RichTextBlockProps } from "@/components/blocks/rich-text-block";
+import type { HeroFlexProps } from "@/components/blocks/hero/hero-flex";
 
 type Block = NonNullable<NonNullable<PAGE_QUERYResult>["blocks"]>[number];
 type ExtendedBlock =
@@ -13,7 +14,8 @@ type ExtendedBlock =
   | ContactFormBlock
   | LocationMapBlock
   | FormContactMapBlock
-  | RichTextBlockProps;
+  | RichTextBlockProps
+  | HeroFlexProps;
 
 type BlockRenderers = {
   [K in ExtendedBlock["_type"]]: () => Promise<
@@ -25,6 +27,10 @@ const componentLoaders = {
   "hero-1": () => import("@/components/blocks/hero/hero-1").then((mod) => mod.default),
   "hero-2": () => import("@/components/blocks/hero/hero-2").then((mod) => mod.default),
   "hero-full": () => import("@/components/blocks/hero/hero-full").then((mod) => mod.default),
+  "hero-flex": () =>
+    import("@/components/blocks/hero/hero-flex").then(
+      (mod) => mod.default as unknown as ComponentType<HeroFlexProps>
+    ),
   "section-header": () =>
     import("@/components/blocks/section-header").then((mod) => mod.default),
   "lottie-animation": () =>

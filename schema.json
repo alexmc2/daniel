@@ -14281,6 +14281,1677 @@
     }
   },
   {
+    "name": "hero-flex",
+    "type": "type",
+    "value": {
+      "type": "object",
+      "attributes": {
+        "_type": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "string",
+            "value": "hero-flex"
+          }
+        },
+        "variant": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "union",
+            "of": [
+              {
+                "type": "string",
+                "value": "fullBleed"
+              },
+              {
+                "type": "string",
+                "value": "split"
+              },
+              {
+                "type": "string",
+                "value": "card"
+              }
+            ]
+          },
+          "optional": true
+        },
+        "minHeight": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "union",
+            "of": [
+              {
+                "type": "string",
+                "value": "60vh"
+              },
+              {
+                "type": "string",
+                "value": "80vh"
+              },
+              {
+                "type": "string",
+                "value": "100vh"
+              },
+              {
+                "type": "string",
+                "value": "custom"
+              }
+            ]
+          },
+          "optional": true
+        },
+        "minHeightCustom": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "number"
+          },
+          "optional": true
+        },
+        "contentSpacing": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "union",
+            "of": [
+              {
+                "type": "string",
+                "value": "compact"
+              },
+              {
+                "type": "string",
+                "value": "cozy"
+              },
+              {
+                "type": "string",
+                "value": "roomy"
+              },
+              {
+                "type": "string",
+                "value": "spacious"
+              }
+            ]
+          },
+          "optional": true
+        },
+        "paddingStrategy": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "union",
+            "of": [
+              {
+                "type": "string",
+                "value": "compact"
+              },
+              {
+                "type": "string",
+                "value": "cozy"
+              },
+              {
+                "type": "string",
+                "value": "roomy"
+              },
+              {
+                "type": "string",
+                "value": "spacious"
+              }
+            ]
+          },
+          "optional": true
+        },
+        "textAlign": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "union",
+            "of": [
+              {
+                "type": "string",
+                "value": "left"
+              },
+              {
+                "type": "string",
+                "value": "center"
+              },
+              {
+                "type": "string",
+                "value": "right"
+              }
+            ]
+          },
+          "optional": true
+        },
+        "invertText": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "boolean"
+          },
+          "optional": true
+        },
+        "mobileStack": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "union",
+            "of": [
+              {
+                "type": "string",
+                "value": "mediaFirst"
+              },
+              {
+                "type": "string",
+                "value": "textFirst"
+              }
+            ]
+          },
+          "optional": true
+        },
+        "mediaPosition": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "union",
+            "of": [
+              {
+                "type": "string",
+                "value": "left"
+              },
+              {
+                "type": "string",
+                "value": "right"
+              }
+            ]
+          },
+          "optional": true
+        },
+        "eyebrow": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "string"
+          },
+          "optional": true
+        },
+        "title": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "string"
+          },
+          "optional": true
+        },
+        "titleStyles": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "object",
+            "attributes": {
+              "font": {
+                "type": "objectAttribute",
+                "value": {
+                  "type": "union",
+                  "of": [
+                    {
+                      "type": "string",
+                      "value": "sans"
+                    },
+                    {
+                      "type": "string",
+                      "value": "serif"
+                    },
+                    {
+                      "type": "string",
+                      "value": "display"
+                    },
+                    {
+                      "type": "string",
+                      "value": "mono"
+                    }
+                  ]
+                },
+                "optional": true
+              },
+              "size": {
+                "type": "objectAttribute",
+                "value": {
+                  "type": "union",
+                  "of": [
+                    {
+                      "type": "string",
+                      "value": "xs"
+                    },
+                    {
+                      "type": "string",
+                      "value": "sm"
+                    },
+                    {
+                      "type": "string",
+                      "value": "base"
+                    },
+                    {
+                      "type": "string",
+                      "value": "lg"
+                    },
+                    {
+                      "type": "string",
+                      "value": "xl"
+                    },
+                    {
+                      "type": "string",
+                      "value": "2xl"
+                    },
+                    {
+                      "type": "string",
+                      "value": "3xl"
+                    },
+                    {
+                      "type": "string",
+                      "value": "4xl"
+                    },
+                    {
+                      "type": "string",
+                      "value": "5xl"
+                    },
+                    {
+                      "type": "string",
+                      "value": "6xl"
+                    }
+                  ]
+                },
+                "optional": true
+              },
+              "weight": {
+                "type": "objectAttribute",
+                "value": {
+                  "type": "union",
+                  "of": [
+                    {
+                      "type": "string",
+                      "value": "300"
+                    },
+                    {
+                      "type": "string",
+                      "value": "400"
+                    },
+                    {
+                      "type": "string",
+                      "value": "500"
+                    },
+                    {
+                      "type": "string",
+                      "value": "600"
+                    },
+                    {
+                      "type": "string",
+                      "value": "700"
+                    },
+                    {
+                      "type": "string",
+                      "value": "800"
+                    }
+                  ]
+                },
+                "optional": true
+              },
+              "tracking": {
+                "type": "objectAttribute",
+                "value": {
+                  "type": "union",
+                  "of": [
+                    {
+                      "type": "string",
+                      "value": "tighter"
+                    },
+                    {
+                      "type": "string",
+                      "value": "tight"
+                    },
+                    {
+                      "type": "string",
+                      "value": "normal"
+                    },
+                    {
+                      "type": "string",
+                      "value": "wide"
+                    }
+                  ]
+                },
+                "optional": true
+              }
+            }
+          },
+          "optional": true
+        },
+        "titleBodySpacing": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "union",
+            "of": [
+              {
+                "type": "string",
+                "value": "tight"
+              },
+              {
+                "type": "string",
+                "value": "snug"
+              },
+              {
+                "type": "string",
+                "value": "normal"
+              },
+              {
+                "type": "string",
+                "value": "relaxed"
+              }
+            ]
+          },
+          "optional": true
+        },
+        "body": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "array",
+            "of": {
+              "type": "union",
+              "of": [
+                {
+                  "type": "object",
+                  "attributes": {
+                    "children": {
+                      "type": "objectAttribute",
+                      "value": {
+                        "type": "array",
+                        "of": {
+                          "type": "object",
+                          "attributes": {
+                            "marks": {
+                              "type": "objectAttribute",
+                              "value": {
+                                "type": "array",
+                                "of": {
+                                  "type": "string"
+                                }
+                              },
+                              "optional": true
+                            },
+                            "text": {
+                              "type": "objectAttribute",
+                              "value": {
+                                "type": "string"
+                              },
+                              "optional": true
+                            },
+                            "_type": {
+                              "type": "objectAttribute",
+                              "value": {
+                                "type": "string",
+                                "value": "span"
+                              }
+                            }
+                          },
+                          "rest": {
+                            "type": "object",
+                            "attributes": {
+                              "_key": {
+                                "type": "objectAttribute",
+                                "value": {
+                                  "type": "string"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "optional": true
+                    },
+                    "style": {
+                      "type": "objectAttribute",
+                      "value": {
+                        "type": "union",
+                        "of": [
+                          {
+                            "type": "string",
+                            "value": "normal"
+                          },
+                          {
+                            "type": "string",
+                            "value": "h1"
+                          },
+                          {
+                            "type": "string",
+                            "value": "h2"
+                          },
+                          {
+                            "type": "string",
+                            "value": "h3"
+                          },
+                          {
+                            "type": "string",
+                            "value": "h4"
+                          },
+                          {
+                            "type": "string",
+                            "value": "blockquote"
+                          }
+                        ]
+                      },
+                      "optional": true
+                    },
+                    "listItem": {
+                      "type": "objectAttribute",
+                      "value": {
+                        "type": "union",
+                        "of": [
+                          {
+                            "type": "string",
+                            "value": "bullet"
+                          },
+                          {
+                            "type": "string",
+                            "value": "number"
+                          }
+                        ]
+                      },
+                      "optional": true
+                    },
+                    "markDefs": {
+                      "type": "objectAttribute",
+                      "value": {
+                        "type": "array",
+                        "of": {
+                          "type": "object",
+                          "attributes": {
+                            "isExternal": {
+                              "type": "objectAttribute",
+                              "value": {
+                                "type": "boolean"
+                              },
+                              "optional": true
+                            },
+                            "internalLink": {
+                              "type": "objectAttribute",
+                              "value": {
+                                "type": "union",
+                                "of": [
+                                  {
+                                    "type": "object",
+                                    "attributes": {
+                                      "_ref": {
+                                        "type": "objectAttribute",
+                                        "value": {
+                                          "type": "string"
+                                        }
+                                      },
+                                      "_type": {
+                                        "type": "objectAttribute",
+                                        "value": {
+                                          "type": "string",
+                                          "value": "reference"
+                                        }
+                                      },
+                                      "_weak": {
+                                        "type": "objectAttribute",
+                                        "value": {
+                                          "type": "boolean"
+                                        },
+                                        "optional": true
+                                      }
+                                    },
+                                    "dereferencesTo": "page"
+                                  },
+                                  {
+                                    "type": "object",
+                                    "attributes": {
+                                      "_ref": {
+                                        "type": "objectAttribute",
+                                        "value": {
+                                          "type": "string"
+                                        }
+                                      },
+                                      "_type": {
+                                        "type": "objectAttribute",
+                                        "value": {
+                                          "type": "string",
+                                          "value": "reference"
+                                        }
+                                      },
+                                      "_weak": {
+                                        "type": "objectAttribute",
+                                        "value": {
+                                          "type": "boolean"
+                                        },
+                                        "optional": true
+                                      }
+                                    },
+                                    "dereferencesTo": "post"
+                                  }
+                                ]
+                              },
+                              "optional": true
+                            },
+                            "href": {
+                              "type": "objectAttribute",
+                              "value": {
+                                "type": "string"
+                              },
+                              "optional": true
+                            },
+                            "target": {
+                              "type": "objectAttribute",
+                              "value": {
+                                "type": "boolean"
+                              },
+                              "optional": true
+                            },
+                            "_type": {
+                              "type": "objectAttribute",
+                              "value": {
+                                "type": "string",
+                                "value": "link"
+                              }
+                            }
+                          },
+                          "rest": {
+                            "type": "object",
+                            "attributes": {
+                              "_key": {
+                                "type": "objectAttribute",
+                                "value": {
+                                  "type": "string"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "optional": true
+                    },
+                    "level": {
+                      "type": "objectAttribute",
+                      "value": {
+                        "type": "number"
+                      },
+                      "optional": true
+                    },
+                    "_type": {
+                      "type": "objectAttribute",
+                      "value": {
+                        "type": "string",
+                        "value": "block"
+                      }
+                    }
+                  },
+                  "rest": {
+                    "type": "object",
+                    "attributes": {
+                      "_key": {
+                        "type": "objectAttribute",
+                        "value": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "object",
+                  "attributes": {
+                    "asset": {
+                      "type": "objectAttribute",
+                      "value": {
+                        "type": "object",
+                        "attributes": {
+                          "_ref": {
+                            "type": "objectAttribute",
+                            "value": {
+                              "type": "string"
+                            }
+                          },
+                          "_type": {
+                            "type": "objectAttribute",
+                            "value": {
+                              "type": "string",
+                              "value": "reference"
+                            }
+                          },
+                          "_weak": {
+                            "type": "objectAttribute",
+                            "value": {
+                              "type": "boolean"
+                            },
+                            "optional": true
+                          }
+                        },
+                        "dereferencesTo": "sanity.imageAsset"
+                      },
+                      "optional": true
+                    },
+                    "media": {
+                      "type": "objectAttribute",
+                      "value": {
+                        "type": "unknown"
+                      },
+                      "optional": true
+                    },
+                    "hotspot": {
+                      "type": "objectAttribute",
+                      "value": {
+                        "type": "inline",
+                        "name": "sanity.imageHotspot"
+                      },
+                      "optional": true
+                    },
+                    "crop": {
+                      "type": "objectAttribute",
+                      "value": {
+                        "type": "inline",
+                        "name": "sanity.imageCrop"
+                      },
+                      "optional": true
+                    },
+                    "alt": {
+                      "type": "objectAttribute",
+                      "value": {
+                        "type": "string"
+                      },
+                      "optional": true
+                    },
+                    "_type": {
+                      "type": "objectAttribute",
+                      "value": {
+                        "type": "string",
+                        "value": "image"
+                      }
+                    }
+                  },
+                  "rest": {
+                    "type": "object",
+                    "attributes": {
+                      "_key": {
+                        "type": "objectAttribute",
+                        "value": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "object",
+                  "attributes": {
+                    "videoId": {
+                      "type": "objectAttribute",
+                      "value": {
+                        "type": "string"
+                      },
+                      "optional": true
+                    },
+                    "_type": {
+                      "type": "objectAttribute",
+                      "value": {
+                        "type": "string",
+                        "value": "youtube"
+                      }
+                    }
+                  },
+                  "rest": {
+                    "type": "object",
+                    "attributes": {
+                      "_key": {
+                        "type": "objectAttribute",
+                        "value": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "object",
+                  "attributes": {
+                    "_key": {
+                      "type": "objectAttribute",
+                      "value": {
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "rest": {
+                    "type": "inline",
+                    "name": "code"
+                  }
+                }
+              ]
+            }
+          },
+          "optional": true
+        },
+        "ctas": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "array",
+            "of": {
+              "type": "object",
+              "attributes": {
+                "label": {
+                  "type": "objectAttribute",
+                  "value": {
+                    "type": "string"
+                  },
+                  "optional": true
+                },
+                "href": {
+                  "type": "objectAttribute",
+                  "value": {
+                    "type": "string"
+                  },
+                  "optional": true
+                },
+                "style": {
+                  "type": "objectAttribute",
+                  "value": {
+                    "type": "union",
+                    "of": [
+                      {
+                        "type": "string",
+                        "value": "primary"
+                      },
+                      {
+                        "type": "string",
+                        "value": "secondary"
+                      },
+                      {
+                        "type": "string",
+                        "value": "ghost"
+                      }
+                    ]
+                  },
+                  "optional": true
+                },
+                "ariaLabel": {
+                  "type": "objectAttribute",
+                  "value": {
+                    "type": "string"
+                  },
+                  "optional": true
+                },
+                "_type": {
+                  "type": "objectAttribute",
+                  "value": {
+                    "type": "string",
+                    "value": "cta"
+                  }
+                }
+              },
+              "rest": {
+                "type": "object",
+                "attributes": {
+                  "_key": {
+                    "type": "objectAttribute",
+                    "value": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "optional": true
+        },
+        "media": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "object",
+            "attributes": {
+              "type": {
+                "type": "objectAttribute",
+                "value": {
+                  "type": "union",
+                  "of": [
+                    {
+                      "type": "string",
+                      "value": "image"
+                    },
+                    {
+                      "type": "string",
+                      "value": "lottie"
+                    }
+                  ]
+                },
+                "optional": true
+              },
+              "image": {
+                "type": "objectAttribute",
+                "value": {
+                  "type": "object",
+                  "attributes": {
+                    "asset": {
+                      "type": "objectAttribute",
+                      "value": {
+                        "type": "object",
+                        "attributes": {
+                          "_ref": {
+                            "type": "objectAttribute",
+                            "value": {
+                              "type": "string"
+                            }
+                          },
+                          "_type": {
+                            "type": "objectAttribute",
+                            "value": {
+                              "type": "string",
+                              "value": "reference"
+                            }
+                          },
+                          "_weak": {
+                            "type": "objectAttribute",
+                            "value": {
+                              "type": "boolean"
+                            },
+                            "optional": true
+                          }
+                        },
+                        "dereferencesTo": "sanity.imageAsset"
+                      },
+                      "optional": true
+                    },
+                    "media": {
+                      "type": "objectAttribute",
+                      "value": {
+                        "type": "unknown"
+                      },
+                      "optional": true
+                    },
+                    "hotspot": {
+                      "type": "objectAttribute",
+                      "value": {
+                        "type": "inline",
+                        "name": "sanity.imageHotspot"
+                      },
+                      "optional": true
+                    },
+                    "crop": {
+                      "type": "objectAttribute",
+                      "value": {
+                        "type": "inline",
+                        "name": "sanity.imageCrop"
+                      },
+                      "optional": true
+                    },
+                    "alt": {
+                      "type": "objectAttribute",
+                      "value": {
+                        "type": "string"
+                      },
+                      "optional": true
+                    },
+                    "_type": {
+                      "type": "objectAttribute",
+                      "value": {
+                        "type": "string",
+                        "value": "image"
+                      }
+                    }
+                  }
+                },
+                "optional": true
+              },
+              "lottie": {
+                "type": "objectAttribute",
+                "value": {
+                  "type": "inline",
+                  "name": "lottie-asset"
+                },
+                "optional": true
+              },
+              "widthMode": {
+                "type": "objectAttribute",
+                "value": {
+                  "type": "union",
+                  "of": [
+                    {
+                      "type": "string",
+                      "value": "auto"
+                    },
+                    {
+                      "type": "string",
+                      "value": "px"
+                    },
+                    {
+                      "type": "string",
+                      "value": "percent"
+                    }
+                  ]
+                },
+                "optional": true
+              },
+              "widthValue": {
+                "type": "objectAttribute",
+                "value": {
+                  "type": "number"
+                },
+                "optional": true
+              },
+              "maxWidth": {
+                "type": "objectAttribute",
+                "value": {
+                  "type": "number"
+                },
+                "optional": true
+              },
+              "fit": {
+                "type": "objectAttribute",
+                "value": {
+                  "type": "union",
+                  "of": [
+                    {
+                      "type": "string",
+                      "value": "contain"
+                    },
+                    {
+                      "type": "string",
+                      "value": "cover"
+                    }
+                  ]
+                },
+                "optional": true
+              },
+              "align": {
+                "type": "objectAttribute",
+                "value": {
+                  "type": "union",
+                  "of": [
+                    {
+                      "type": "string",
+                      "value": "start"
+                    },
+                    {
+                      "type": "string",
+                      "value": "center"
+                    },
+                    {
+                      "type": "string",
+                      "value": "end"
+                    }
+                  ]
+                },
+                "optional": true
+              }
+            }
+          },
+          "optional": true
+        },
+        "background": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "object",
+            "attributes": {
+              "mode": {
+                "type": "objectAttribute",
+                "value": {
+                  "type": "union",
+                  "of": [
+                    {
+                      "type": "string",
+                      "value": "none"
+                    },
+                    {
+                      "type": "string",
+                      "value": "color"
+                    },
+                    {
+                      "type": "string",
+                      "value": "image"
+                    },
+                    {
+                      "type": "string",
+                      "value": "gradient"
+                    }
+                  ]
+                },
+                "optional": true
+              },
+              "token": {
+                "type": "objectAttribute",
+                "value": {
+                  "type": "union",
+                  "of": [
+                    {
+                      "type": "string",
+                      "value": "background"
+                    },
+                    {
+                      "type": "string",
+                      "value": "foreground"
+                    },
+                    {
+                      "type": "string",
+                      "value": "card"
+                    },
+                    {
+                      "type": "string",
+                      "value": "card-foreground"
+                    },
+                    {
+                      "type": "string",
+                      "value": "popover"
+                    },
+                    {
+                      "type": "string",
+                      "value": "popover-foreground"
+                    },
+                    {
+                      "type": "string",
+                      "value": "primary"
+                    },
+                    {
+                      "type": "string",
+                      "value": "primary-foreground"
+                    },
+                    {
+                      "type": "string",
+                      "value": "secondary"
+                    },
+                    {
+                      "type": "string",
+                      "value": "secondary-foreground"
+                    },
+                    {
+                      "type": "string",
+                      "value": "muted"
+                    },
+                    {
+                      "type": "string",
+                      "value": "muted-foreground"
+                    },
+                    {
+                      "type": "string",
+                      "value": "accent"
+                    },
+                    {
+                      "type": "string",
+                      "value": "accent-foreground"
+                    },
+                    {
+                      "type": "string",
+                      "value": "destructive"
+                    },
+                    {
+                      "type": "string",
+                      "value": "destructive-foreground"
+                    },
+                    {
+                      "type": "string",
+                      "value": "white"
+                    },
+                    {
+                      "type": "string",
+                      "value": "white-foreground"
+                    },
+                    {
+                      "type": "string",
+                      "value": "black"
+                    },
+                    {
+                      "type": "string",
+                      "value": "black-foreground"
+                    },
+                    {
+                      "type": "string",
+                      "value": "light-gray"
+                    },
+                    {
+                      "type": "string",
+                      "value": "light-gray-foreground"
+                    },
+                    {
+                      "type": "string",
+                      "value": "cool-gray"
+                    },
+                    {
+                      "type": "string",
+                      "value": "cool-gray-foreground"
+                    },
+                    {
+                      "type": "string",
+                      "value": "soft-blue"
+                    },
+                    {
+                      "type": "string",
+                      "value": "soft-blue-foreground"
+                    },
+                    {
+                      "type": "string",
+                      "value": "sky-blue"
+                    },
+                    {
+                      "type": "string",
+                      "value": "sky-blue-foreground"
+                    },
+                    {
+                      "type": "string",
+                      "value": "mint"
+                    },
+                    {
+                      "type": "string",
+                      "value": "mint-foreground"
+                    },
+                    {
+                      "type": "string",
+                      "value": "sand"
+                    },
+                    {
+                      "type": "string",
+                      "value": "sand-foreground"
+                    },
+                    {
+                      "type": "string",
+                      "value": "peach"
+                    },
+                    {
+                      "type": "string",
+                      "value": "peach-foreground"
+                    },
+                    {
+                      "type": "string",
+                      "value": "slate"
+                    },
+                    {
+                      "type": "string",
+                      "value": "slate-foreground"
+                    },
+                    {
+                      "type": "string",
+                      "value": "navy"
+                    },
+                    {
+                      "type": "string",
+                      "value": "navy-foreground"
+                    },
+                    {
+                      "type": "string",
+                      "value": "charcoal"
+                    },
+                    {
+                      "type": "string",
+                      "value": "charcoal-foreground"
+                    }
+                  ]
+                },
+                "optional": true
+              },
+              "color": {
+                "type": "objectAttribute",
+                "value": {
+                  "type": "string"
+                },
+                "optional": true
+              },
+              "image": {
+                "type": "objectAttribute",
+                "value": {
+                  "type": "object",
+                  "attributes": {
+                    "asset": {
+                      "type": "objectAttribute",
+                      "value": {
+                        "type": "object",
+                        "attributes": {
+                          "_ref": {
+                            "type": "objectAttribute",
+                            "value": {
+                              "type": "string"
+                            }
+                          },
+                          "_type": {
+                            "type": "objectAttribute",
+                            "value": {
+                              "type": "string",
+                              "value": "reference"
+                            }
+                          },
+                          "_weak": {
+                            "type": "objectAttribute",
+                            "value": {
+                              "type": "boolean"
+                            },
+                            "optional": true
+                          }
+                        },
+                        "dereferencesTo": "sanity.imageAsset"
+                      },
+                      "optional": true
+                    },
+                    "media": {
+                      "type": "objectAttribute",
+                      "value": {
+                        "type": "unknown"
+                      },
+                      "optional": true
+                    },
+                    "hotspot": {
+                      "type": "objectAttribute",
+                      "value": {
+                        "type": "inline",
+                        "name": "sanity.imageHotspot"
+                      },
+                      "optional": true
+                    },
+                    "crop": {
+                      "type": "objectAttribute",
+                      "value": {
+                        "type": "inline",
+                        "name": "sanity.imageCrop"
+                      },
+                      "optional": true
+                    },
+                    "alt": {
+                      "type": "objectAttribute",
+                      "value": {
+                        "type": "string"
+                      },
+                      "optional": true
+                    },
+                    "_type": {
+                      "type": "objectAttribute",
+                      "value": {
+                        "type": "string",
+                        "value": "image"
+                      }
+                    }
+                  }
+                },
+                "optional": true
+              },
+              "overlayOpacity": {
+                "type": "objectAttribute",
+                "value": {
+                  "type": "number"
+                },
+                "optional": true
+              },
+              "gradient": {
+                "type": "objectAttribute",
+                "value": {
+                  "type": "object",
+                  "attributes": {
+                    "angle": {
+                      "type": "objectAttribute",
+                      "value": {
+                        "type": "number"
+                      },
+                      "optional": true
+                    },
+                    "from": {
+                      "type": "objectAttribute",
+                      "value": {
+                        "type": "string"
+                      },
+                      "optional": true
+                    },
+                    "to": {
+                      "type": "objectAttribute",
+                      "value": {
+                        "type": "string"
+                      },
+                      "optional": true
+                    }
+                  }
+                },
+                "optional": true
+              }
+            }
+          },
+          "optional": true
+        },
+        "shape": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "object",
+            "attributes": {
+              "enabled": {
+                "type": "objectAttribute",
+                "value": {
+                  "type": "boolean"
+                },
+                "optional": true
+              },
+              "type": {
+                "type": "objectAttribute",
+                "value": {
+                  "type": "union",
+                  "of": [
+                    {
+                      "type": "string",
+                      "value": "rectangle"
+                    },
+                    {
+                      "type": "string",
+                      "value": "rounded"
+                    }
+                  ]
+                },
+                "optional": true
+              },
+              "radius": {
+                "type": "objectAttribute",
+                "value": {
+                  "type": "number"
+                },
+                "optional": true
+              },
+              "padding": {
+                "type": "objectAttribute",
+                "value": {
+                  "type": "number"
+                },
+                "optional": true
+              },
+              "shadow": {
+                "type": "objectAttribute",
+                "value": {
+                  "type": "union",
+                  "of": [
+                    {
+                      "type": "string",
+                      "value": "none"
+                    },
+                    {
+                      "type": "string",
+                      "value": "soft"
+                    },
+                    {
+                      "type": "string",
+                      "value": "medium"
+                    },
+                    {
+                      "type": "string",
+                      "value": "strong"
+                    }
+                  ]
+                },
+                "optional": true
+              },
+              "fill": {
+                "type": "objectAttribute",
+                "value": {
+                  "type": "union",
+                  "of": [
+                    {
+                      "type": "string",
+                      "value": "color"
+                    },
+                    {
+                      "type": "string",
+                      "value": "image"
+                    },
+                    {
+                      "type": "string",
+                      "value": "lottie"
+                    }
+                  ]
+                },
+                "optional": true
+              },
+              "color": {
+                "type": "objectAttribute",
+                "value": {
+                  "type": "string"
+                },
+                "optional": true
+              },
+              "token": {
+                "type": "objectAttribute",
+                "value": {
+                  "type": "union",
+                  "of": [
+                    {
+                      "type": "string",
+                      "value": "background"
+                    },
+                    {
+                      "type": "string",
+                      "value": "foreground"
+                    },
+                    {
+                      "type": "string",
+                      "value": "card"
+                    },
+                    {
+                      "type": "string",
+                      "value": "card-foreground"
+                    },
+                    {
+                      "type": "string",
+                      "value": "popover"
+                    },
+                    {
+                      "type": "string",
+                      "value": "popover-foreground"
+                    },
+                    {
+                      "type": "string",
+                      "value": "primary"
+                    },
+                    {
+                      "type": "string",
+                      "value": "primary-foreground"
+                    },
+                    {
+                      "type": "string",
+                      "value": "secondary"
+                    },
+                    {
+                      "type": "string",
+                      "value": "secondary-foreground"
+                    },
+                    {
+                      "type": "string",
+                      "value": "muted"
+                    },
+                    {
+                      "type": "string",
+                      "value": "muted-foreground"
+                    },
+                    {
+                      "type": "string",
+                      "value": "accent"
+                    },
+                    {
+                      "type": "string",
+                      "value": "accent-foreground"
+                    },
+                    {
+                      "type": "string",
+                      "value": "destructive"
+                    },
+                    {
+                      "type": "string",
+                      "value": "destructive-foreground"
+                    },
+                    {
+                      "type": "string",
+                      "value": "white"
+                    },
+                    {
+                      "type": "string",
+                      "value": "white-foreground"
+                    },
+                    {
+                      "type": "string",
+                      "value": "black"
+                    },
+                    {
+                      "type": "string",
+                      "value": "black-foreground"
+                    },
+                    {
+                      "type": "string",
+                      "value": "light-gray"
+                    },
+                    {
+                      "type": "string",
+                      "value": "light-gray-foreground"
+                    },
+                    {
+                      "type": "string",
+                      "value": "cool-gray"
+                    },
+                    {
+                      "type": "string",
+                      "value": "cool-gray-foreground"
+                    },
+                    {
+                      "type": "string",
+                      "value": "soft-blue"
+                    },
+                    {
+                      "type": "string",
+                      "value": "soft-blue-foreground"
+                    },
+                    {
+                      "type": "string",
+                      "value": "sky-blue"
+                    },
+                    {
+                      "type": "string",
+                      "value": "sky-blue-foreground"
+                    },
+                    {
+                      "type": "string",
+                      "value": "mint"
+                    },
+                    {
+                      "type": "string",
+                      "value": "mint-foreground"
+                    },
+                    {
+                      "type": "string",
+                      "value": "sand"
+                    },
+                    {
+                      "type": "string",
+                      "value": "sand-foreground"
+                    },
+                    {
+                      "type": "string",
+                      "value": "peach"
+                    },
+                    {
+                      "type": "string",
+                      "value": "peach-foreground"
+                    },
+                    {
+                      "type": "string",
+                      "value": "slate"
+                    },
+                    {
+                      "type": "string",
+                      "value": "slate-foreground"
+                    },
+                    {
+                      "type": "string",
+                      "value": "navy"
+                    },
+                    {
+                      "type": "string",
+                      "value": "navy-foreground"
+                    },
+                    {
+                      "type": "string",
+                      "value": "charcoal"
+                    },
+                    {
+                      "type": "string",
+                      "value": "charcoal-foreground"
+                    }
+                  ]
+                },
+                "optional": true
+              },
+              "image": {
+                "type": "objectAttribute",
+                "value": {
+                  "type": "object",
+                  "attributes": {
+                    "asset": {
+                      "type": "objectAttribute",
+                      "value": {
+                        "type": "object",
+                        "attributes": {
+                          "_ref": {
+                            "type": "objectAttribute",
+                            "value": {
+                              "type": "string"
+                            }
+                          },
+                          "_type": {
+                            "type": "objectAttribute",
+                            "value": {
+                              "type": "string",
+                              "value": "reference"
+                            }
+                          },
+                          "_weak": {
+                            "type": "objectAttribute",
+                            "value": {
+                              "type": "boolean"
+                            },
+                            "optional": true
+                          }
+                        },
+                        "dereferencesTo": "sanity.imageAsset"
+                      },
+                      "optional": true
+                    },
+                    "media": {
+                      "type": "objectAttribute",
+                      "value": {
+                        "type": "unknown"
+                      },
+                      "optional": true
+                    },
+                    "hotspot": {
+                      "type": "objectAttribute",
+                      "value": {
+                        "type": "inline",
+                        "name": "sanity.imageHotspot"
+                      },
+                      "optional": true
+                    },
+                    "crop": {
+                      "type": "objectAttribute",
+                      "value": {
+                        "type": "inline",
+                        "name": "sanity.imageCrop"
+                      },
+                      "optional": true
+                    },
+                    "alt": {
+                      "type": "objectAttribute",
+                      "value": {
+                        "type": "string"
+                      },
+                      "optional": true
+                    },
+                    "_type": {
+                      "type": "objectAttribute",
+                      "value": {
+                        "type": "string",
+                        "value": "image"
+                      }
+                    }
+                  }
+                },
+                "optional": true
+              },
+              "lottie": {
+                "type": "objectAttribute",
+                "value": {
+                  "type": "inline",
+                  "name": "lottie-asset"
+                },
+                "optional": true
+              }
+            }
+          },
+          "optional": true
+        }
+      }
+    }
+  },
+  {
     "name": "section-padding",
     "type": "type",
     "value": {
@@ -15824,6 +17495,21 @@
                 },
                 "rest": {
                   "type": "inline",
+                  "name": "hero-flex"
+                }
+              },
+              {
+                "type": "object",
+                "attributes": {
+                  "_key": {
+                    "type": "objectAttribute",
+                    "value": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "rest": {
+                  "type": "inline",
                   "name": "section-header"
                 }
               },
@@ -16198,6 +17884,103 @@
           "type": "string"
         },
         "optional": true
+      }
+    }
+  },
+  {
+    "name": "lottie-asset",
+    "type": "type",
+    "value": {
+      "type": "object",
+      "attributes": {
+        "_type": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "string",
+            "value": "lottie-asset"
+          }
+        },
+        "file": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "object",
+            "attributes": {
+              "asset": {
+                "type": "objectAttribute",
+                "value": {
+                  "type": "object",
+                  "attributes": {
+                    "_ref": {
+                      "type": "objectAttribute",
+                      "value": {
+                        "type": "string"
+                      }
+                    },
+                    "_type": {
+                      "type": "objectAttribute",
+                      "value": {
+                        "type": "string",
+                        "value": "reference"
+                      }
+                    },
+                    "_weak": {
+                      "type": "objectAttribute",
+                      "value": {
+                        "type": "boolean"
+                      },
+                      "optional": true
+                    }
+                  },
+                  "dereferencesTo": "sanity.fileAsset"
+                },
+                "optional": true
+              },
+              "media": {
+                "type": "objectAttribute",
+                "value": {
+                  "type": "unknown"
+                },
+                "optional": true
+              },
+              "_type": {
+                "type": "objectAttribute",
+                "value": {
+                  "type": "string",
+                  "value": "file"
+                }
+              }
+            }
+          },
+          "optional": true
+        },
+        "autoplay": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "boolean"
+          },
+          "optional": true
+        },
+        "loop": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "boolean"
+          },
+          "optional": true
+        },
+        "speed": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "number"
+          },
+          "optional": true
+        },
+        "ariaLabel": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "string"
+          },
+          "optional": true
+        }
       }
     }
   },

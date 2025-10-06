@@ -43,6 +43,7 @@ export default defineType({
         { type: "hero-1" },
         { type: "hero-2" },
         { type: "hero-full" },
+        { type: "hero-flex" },
         { type: "section-header" },
         { type: "rich-text-block" },
         { type: "lottie-animation" },
@@ -69,7 +70,7 @@ export default defineType({
             {
               name: "hero",
               title: "Hero",
-              of: ["hero-1", "hero-2", "hero-full"],
+              of: ["hero-1", "hero-2", "hero-full", "hero-flex"],
             },
             {
               name: "logo-cloud",

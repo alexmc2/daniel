@@ -72,6 +72,63 @@ The schema for the `Page` document type is defined in the `sanity/schemas/docume
 
 This template includes all components from the [Schema UI](https://schemaui.com/docs/components) library. Visit [Schema UI Docs](https://schemaui.com/docs/how-to-use) to learn how to add new components.
 
+## Hero Flex block
+
+- Schema lives at `sanity/schemas/objects/hero_flex.ts` and is registered on the `Page` builder alongside existing hero blocks.
+- Front-end implementation is available at `components/blocks/hero/hero-flex.tsx`, with additional Lottie helpers in the same directory.
+- GROQ selection can be reused via `sanity/queries/hero/hero-flex.ts` and is already composed inside `sanity/queries/page.ts`.
+- Regenerate Sanity types after pulling the schema (`npm run typegen`) so `PAGE_QUERYResult` includes the new block shape.
+- Local previews for the three layout variants are provided in `components/blocks/hero/hero-flex.mocks.ts`.
+
+### Example Sanity block
+
+```json5
+{
+  "_type": "hero-flex",
+  "variant": "split",
+  "minHeight": "80vh",
+  "textAlign": "left",
+  "mediaPosition": "right",
+  "title": "Design without creative limits",
+  "titleStyles": {
+    "font": "display",
+    "size": "2xl",
+    "weight": "700"
+  },
+  "ctas": [
+    { "_key": "primary", "label": "Start a project", "href": "/contact", "style": "primary" },
+    { "_key": "ghost", "label": "Explore features", "href": "/features", "style": "ghost" }
+  ],
+  "media": {
+    "type": "lottie",
+    "align": "center",
+    "fit": "contain",
+    "widthMode": "percent",
+    "widthValue": 80,
+    "lottie": {
+      "file": { "asset": { "_ref": "file-<your-lottie-asset-id>" } },
+      "ariaLabel": "Abstract neon spheres pulsing"
+    }
+  },
+  "background": {
+    "mode": "gradient",
+    "gradient": {
+      "angle": 135,
+      "from": "#0f172a",
+      "to": "#312e81"
+    }
+  },
+  "shape": {
+    "enabled": true,
+    "type": "rounded",
+    "padding": 32,
+    "shadow": "medium",
+    "fill": "color",
+    "token": "card"
+  }
+}
+```
+
 ### Deploying your application
 
 #### 1. Configure CORS settings
